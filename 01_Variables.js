@@ -6,7 +6,7 @@ accoutnCity = "Jaipur";
 // we are not override constant value 
 //block scope 
 // accoutn = "23123";
-// console.log(accoutn);_
+// console.log(accoutn);
 
 
 // // let  we can Override / block scope
@@ -15,4 +15,5 @@ accoutnCity = "Jaipur";
 
 // var is use global scope
 // var also we override ;
+
 
