@@ -42,3 +42,7 @@ let arr = {};
 let arr1 = Number(arr);
 console.log(arr1);
 
+
+
+
+
