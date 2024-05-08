@@ -15,3 +15,11 @@ console.log("3" > 1) // true
 console.log(null > 0) // false
 console.log(null == 0) // false
 console.log(null >= 0) // true
+
+
+// ===========================================================================
+
+// Memory stack and heap
+
+// stack = used with Primitive type -> declare local variable
+// heap = allocating a memory to the obj variable
