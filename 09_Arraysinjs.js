@@ -36,6 +36,44 @@ console.log("after splice " +some.splice(1,3)); //  // its manipulate with origi
 console.log("original Array "+some);
 
 
+const marvel = ["thor", "iron", "hatman"];
+const dc = ["sona", "kona", "sam"];
+
+// marvel.push(dc);
+// console.log(marvel); // [ 'thor', 'iron', 'hatman', [ 'sona', 'kona', 'sam' ] ]
+
+const mc = marvel.concat(dc);
+console.log(mc); // [ 'thor', 'iron', 'hatman', 'sona', 'kona', 'sam' ]
+
+
+const allnewheroes = [...marvel,... dc];
+console.log(allnewheroes); // [ 'thor', 'iron', 'hatman', 'sona', 'kona', 'sam' ]
+
+
+const anotherarr = [1,2,3,4,5, [6,7,8,[9,10]]];
+const realanother = anotherarr.flat(Infinity);
+console.log(realanother); 
+// [
+//     1, 2, 3, 4,  5,
+//     6, 7, 8, 9, 10
+//   ]
+
+console.log(Array.isArray("Hitesh")); // false
+
+console.log(Array.from("hitesh")); // [ 'h', 'i', 't', 'e', 's', 'h' ]
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+console.log(Array.of(score1, score2, score3)); // [ 100, 200, 300 ]
+
+
+
+
+
+
+
 
 
 
