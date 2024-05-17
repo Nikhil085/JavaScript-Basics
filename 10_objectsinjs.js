@@ -95,8 +95,33 @@ console.log(tinder);
 console.log(Object.keys(tinder)); // [ 'id', 'name', 'isLogedin' ]b
 console.log(Object.values(tinder)); // [ 'jsnk323', 'same', false ];
 
+  //////////////////////////////// ////////////////////////////////////////
+       
+  
+  // object De-structuring
 
 
+
+
+const course = {
+    coursename:"js",
+    price:1000,
+    courseTeacher:"Nikhl"
+}
+
+console.log(course.coursename);
+
+const {courseTeacher, price, coursename} = course; // obj destructuring
+console.log(courseTeacher);
+
+const Nav = ({company}) => {   // in react we use destructuring that type to access muliple props in {} braces
+   
+}
+
+Nav(company = "Nik");
+
+
+///////////////////////////////////////
 
 
 
