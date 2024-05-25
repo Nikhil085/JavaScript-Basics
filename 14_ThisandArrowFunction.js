@@ -12,6 +12,8 @@ const user = {
     }
 }
 
+// THis only refer current context 
+
 // user.welComeMessage(); // NIkhil welcome here
 // user.username = "sam";
 // user.welComeMessage();//  sam welcome here
@@ -20,7 +22,7 @@ const user = {
 // console.log(this); // {}
 
 //////
-
+//that is not current context thts reason is given undefine  
 // function one(){
 //     let username = "Nikhil"
 //     console.log(this.username); // undefined
