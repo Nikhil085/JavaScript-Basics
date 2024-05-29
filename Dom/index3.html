@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice With DOM</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+
+// using Function Create Elements and Edit
+
+     function addLanguage(language){
+        const li = document.createElement('li');
+        li.innerHTML = `${language}`;
+        document.querySelector('.language').appendChild(li);
+     }
+
+    //  addLanguage('Java');
+
+     function addLanguageOptimizeWay(language){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(language));
+        document.querySelector('.language').appendChild(li);
+     }
+ addLanguageOptimizeWay('java')
+
+ ///  Edit Elements
+
+//  const secondLang = document.querySelector('li:nth-child(2)');
+//  secondLang.innerHTML = "Mumbasa";
+
+
+// const newLi = document.createElement('li');
+// newLi.textContent = "Simba";
+// secondLang.replaceWith(newLi);
+
+const firstLang = document.querySelector('li:first-child');
+firstLang.outerHTML = '<li>Python</li>';
+
+/// remove Elements
+
+const lastLang = document.querySelector('li:last-child');
+lastLang.remove();
+ 
+</script>
+</html>
