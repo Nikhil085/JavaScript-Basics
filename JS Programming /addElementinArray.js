@@ -19,11 +19,11 @@
 // insert the elelemtin perfect Place ////
 
 function inserttheElement(arr, index, element){
-    let newArr =  Array new [];
-    for(let i=0; i<arr.length+1; i++){
-        if(arr[i] < index){
+    let newArr = [];
+    for(let i=0; i<arr.length; i++){
+        if(i < index){
             newArr[i] = arr[i];
-        }else if (index == arr[i]){
+        }else if(i === index){
             newArr[i] = element;
         }else{
             newArr[i] = arr[i-1];
